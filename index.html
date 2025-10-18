@@ -127,10 +127,10 @@
 
     <div class="gallery">
       <div class="slides" id="slides">
-        <div class="slide"><img src="photo1.jpg" alt="photo 1"></div>
-        <div class="slide"><img src="photo2.jpg" alt="photo 2"></div>
-        <div class="slide"><img src="photo3.jpg" alt="photo 3"></div>
-        <div class="slide"><img src="photo4.jpg" alt="photo 4"></div>
+        <div class="slide"><img src="photos/photo1.jpg" alt="photo 1"></div>
+        <div class="slide"><img src="photos/photo2.jpg" alt="photo 2"></div>
+        <div class="slide"><img src="photos/photo3.jpg" alt="photo 3"></div>
+        <div class="slide"><img src="photos/photo4.jpg" alt="photo 4"></div>
       </div>
     </div>
 
@@ -196,7 +196,7 @@
       function resetTimer(){clearInterval(interval);interval=setInterval(next,delay);}
       prevBtn.addEventListener('click',()=>{prev();resetTimer()});
       nextBtn.addEventListener('click',()=>{next();resetTimer()});
-      surpriseBtn.addEventListener('click',()=>{createConfetti(100);alert('🎉 SURPRISE! 🎉\\nAyushi, you are loved more than words — from Soham ❤️');});
+      surpriseBtn.addEventListener('click',()=>{createConfetti(100);alert('🎉 SURPRISE! 🎉\\Ayushi, you are loved more than words — from Soham ❤️');});
       buildDots();resetTimer();
       document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){next();resetTimer()}if(e.key==='ArrowLeft'){prev();resetTimer()}});
     })();
@@ -227,4 +227,5 @@
   </script>
 </body>
 </html>
+
 
